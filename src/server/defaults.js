@@ -8,8 +8,8 @@ var errorhandler = require('errorhandler')
 var objectAssign = require('object-assign')
 
 module.exports = function (opts) {
-  var userDir = path.join(process.cwd(), 'public')
-  var defaultDir = path.join(__dirname, 'public')
+  var userDir = path.join(process.cwd(), 'app')
+  var defaultDir = path.join(__dirname, 'app')
   var staticDir = fs.existsSync(userDir)
     ? userDir
     : defaultDir
